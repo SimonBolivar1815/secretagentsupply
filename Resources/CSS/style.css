@@ -63,19 +63,107 @@ header img{
   display: flex;
   background-color: maroon;
   justify-content: center;
+  height: 40px;
+  width: auto;
 }
 
 .navigate .bar{
   display:flex;
   border: 2px solid blue;
+  width: 70%;
+  justify-content: space-between;
 }
 
 .navigate span{
   display: flex;
   border: 1px solid white;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigate a{
   color: white;
   text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.content{
+  display: flex;
+  border: 1px solid white;
+  flex-direction: column;
+  background-color: white;
+}
+
+.content .products{
+  display: flex;
+  border: 1px dashed yellow;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15%;
+  height: 30%;
+}
+
+.product-image{
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 210px;
+  object-fit: scale-down;
+}
+
+.content img{
+  display: flex;
+  width: 150px;
+  height: 150px;
+}
+
+.content .product{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 1rem 0rem;
+}
+
+.content .products h3{
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.info{
+  display: flex;
+  border: 1px solid green;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 10%;
+}
+
+.info .tab{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  width: 250px;
+}
+
+.info h3{
+  background-color: black;
+  padding: 1rem 1rem;
+}
+
+.info h4{
+  color: black;
+  padding: 0.8rem 0;
+}
+
+footer{
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+footer h3{
+  margin-left: 15%;
 }
