@@ -1,5 +1,6 @@
 html{
-  font-size: 16px;
+  font-size: 18px;
+  font-family: Helvetica;
 }
 
 
@@ -9,7 +10,7 @@ body{
 }
 
 h3{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 h1{
@@ -20,57 +21,81 @@ header{
   display: flex;
   border: 1px white solid;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header .logo{
+  display: flex;
+  width: 960px;
+  border: 1px white solid;
+  align-items: center;
 }
 
 header img{
-  padding-left: 15%;
-  padding-right: 15px;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+header h3{
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
 }
 
 .banner{
   display: flex;
   border: 1px white solid;
   background-image:url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
-  height: 350px;
+  height: 25rem;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+}
 
+.banner .border{
+  display: flex;
+  height: 25rem;
+  width: 960px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .banner .arrivals{
+  display: flex;
   border: 1px white solid;
   background-color: black;
   display: flex;
-  width: 22rem;
-  height: 40%;
-  margin-left: 15%;
-  max-width: 340px;
-  min-width:
+  width: 25rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner .arrivals .text{
-  display: flex;
-  border: 1px yellow dashed;
-  margin: 5%;
-  flex-direction: column;
-  justify-content:space-between;
-
+.banner h1{
+  padding: 0.25rem 3rem 2rem 3rem;
+  font-weight: bold;
 }
+
+.banner h3{
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+}
+
 
 .navigate{
   display: flex;
-  background-color: maroon;
+  background-color: firebrick;
   justify-content: center;
-  height: 40px;
   width: auto;
 }
 
 .navigate .bar{
   display:flex;
   border: 2px solid blue;
-  width: 70%;
+  width: 960px;
   justify-content: space-between;
 }
 
@@ -79,6 +104,7 @@ header img{
   border: 1px solid white;
   justify-content: center;
   align-items: center;
+  padding: 0.75rem 0;
 }
 
 .navigate a{
@@ -92,15 +118,17 @@ header img{
   border: 1px solid white;
   flex-direction: column;
   background-color: white;
+  width: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .content .products{
   display: flex;
   border: 1px dashed yellow;
   align-items: center;
-  justify-content: flex-start;
-  margin-left: 15%;
-  height: 30%;
+  justify-content: space-between;
+  width: 960px;
 }
 
 .product-image{
@@ -108,21 +136,25 @@ header img{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 210px;
   object-fit: scale-down;
+  height: 9rem;
+  padding: 2rem 0;
 }
 
 .content img{
   display: flex;
-  width: 150px;
-  height: 150px;
+  height: 9rem;
 }
 
 .content .product{
   display: flex;
   flex-direction: column;
-  margin: 2rem 2rem 1rem 0rem;
+  width: 30%;
+}
+
+#watch{
+  width: 50%;
+  height:40%;
 }
 
 .content .products h3{
